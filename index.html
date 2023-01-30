@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Escape</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="https://openclipart.org/download/332018/abductionwarning.svg">
+</head>
+
+<body>
+  <h1>Space Escape</h1>
+  <h2>Find your ship to escape the aliens!</h2>
+  <img 
+    src="https://publicdomainvectors.org/photos/1528153358.png"
+    height="450px"
+    />
+  <br>
+  <br>
+  <a href="#game">Start the game</a>
+  <ul>
+    <li>Click the boxes to reveal what's on the map.</li>
+    <li>If you click on an alien, you lose!</li>
+    <li>If you click on the spaceship, you win!</li>
+  </ul>
+<button type="button" onclick="location.reload()">Restart Game</button>
+<p>
+  Clicks Remaining:
+</p>
+<p id="click">
+  5
+</p>
+<div>
+  <table id="game">
+    <tr>
+        <td id="0" onclick="ship(0)">X</td>
+        <td id="1" onclick="ship(1)">X</td>
+        <td id="2" onclick="ship(2)">X</td>
+
+    </tr>
+    <tr>
+      <td id="3" onclick="ship(3)">X</td>
+      <td id="4" onclick="ship(4)">X</td>
+      <td id="5" onclick="ship(5)">X</td>
+
+    </tr>
+    <tr>
+      <td id="6" onclick="ship(6)">X</td>
+      <td id="7" onclick="ship(7)">X</td>
+      <td id="8" onclick="ship(8)">X</td>
+
+    </tr>
+</table>
+</div>
+<footer>&copy CJ and Simon</footer>
+<br>
+<a href="https://www.spacejam.com/1996/">More Space!</a>
+<script type="text/javascript" src = "treasurehunt.js"></script>
+</body>
+
+</html>
